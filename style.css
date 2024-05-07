@@ -1,0 +1,232 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  
+  
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: end;
+  margin: 10px;
+  padding: 15px;
+  background-image: url("images/images (5).jpg");
+  background-size: cover;
+  animation: verticalBounce 2s ease-in-out infinite;
+}
+
+@keyframes verticalBounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px); /* Move the element 50px down */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+ul {
+  list-style-type: none;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  margin-left: 30px;
+  font-size: 50px;
+  text-decoration: overline;
+  animation: spin 2s linear infinite;
+}
+
+.life-aside {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  height: 100vh;
+  width: 30%; /* Adjust the width as needed */
+  border: 10px dashed orangered;
+  padding-bottom: 30px;
+  background-color: #4CAF50;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+.life-aside h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.featured-articles h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  color: cadetblue;
+}
+.featured-articles ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-articles ul li a {
+  text-decoration: none;
+}
+
+.quote-of-the-day h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.share-your-story h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid red;
+  animation: spin 2s linear infinite;
+}
+
+main {
+   
+    flex: 1; 
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .element {
+    background-color: #4CAF50;
+    padding: 20px;
+    border: 10px solid #333;
+    background-clip: content-box;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    margin: 0;
+  }
+  
+
+  .main-content-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1; /* Allow the container to grow and fill the available space */
+  }
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-links li a {
+  color: #333; /* Change the color of the icons */
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(93, 93, 204);
+  justify-content: space-between;
+  animation: spin 2s linear infinite;
+}
+
+.about {
+  border: 4px solid red;
+  animation: verticalBounce 2s ease-in-out infinite;
+}
+.contact {
+  border: 4px solid red;
+  animation: spin 2s linear infinite;
+}
+
+.contact h3{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: cadetblue;
+}
+.links {
+  border: 4px solid red;
+  animation: verticalBounce 2s ease-in-out infinite;
+}
+.links h3{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: cadetblue;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-bottom {
+  border: 4px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  animation: verticalBounce 2s ease-in-out infinite;
+}
+.footer-bottom p {
+  margin: 0;
+}

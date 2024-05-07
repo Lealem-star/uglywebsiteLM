@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Connect with the Mysterious</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #261b1b;
+        color: #333;
+        text-align: center;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: end;
+        margin: 10px;
+        padding: 15px;
+        background-image: url("images/images (5).jpg");
+        background-size: cover;
+        animation: verticalBounce 2s ease-in-out infinite;
+      }
+
+      @keyframes verticalBounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(50px); /* Move the element 50px down */
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      header li {
+        margin-left: 30px;
+        font-size: 50px;
+        text-decoration: overline;
+        animation: spin 2s linear infinite;
+      }
+
+      img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid red;
+  animation: spin 2s linear infinite;
+}
+      .content {
+        padding: 50px;
+      }
+      .address-section {
+        margin: 50px;
+        text-align: left;
+      }
+      img {
+        animation: spin 2s linear infinite;
+      }
+      .address-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #333;
+      }
+      .address:hover {
+        font-size: 18px;
+        border: 6px dashed red;
+        transform: skewY(180deg);
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/image.png" alt="WhY nOT ReNdeR ?" />
+      <ul>
+        <li><a href="Home.html">HomE</a></li>
+        <li><a href="About.html">ABoUT</a></li>
+        <li><a href="Contact.html">ConTacT</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="address-section">
+        <h2 class="address-title">Sprite's Hideout</h2>
+        <p class="address">Enchanted Forest, Behind the Waterfall</p>
+      </div>
+      <img src="images/images (5).jpg" alt="images/images.jpg" />
+      <div class="address-section">
+        <h2 class="address-title">Hell's Gate</h2>
+        <p class="address">666 Inferno Street, Underworld</p>
+      </div>
+      <img src="images/images (5).jpg" alt="images/images.jpg" />
+      <div class="address-section">
+        <h2 class="address-title">The Devil's Lair</h2>
+        <p class="address">666 Darkness Avenue, Hades</p>
+      </div>
+      <img src="images/image.png" alt="images/images.jpg" />
+      <div class="address-section">
+        <h2 class="address-title">Bad Man's Hangout</h2>
+        <p class="address">Under the Bridge, Shady Lane</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2024 Connect with the Mysterious. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
